@@ -1,0 +1,30 @@
+#root, html,body{
+ width: 100%;
+ height: 100%;
+
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+.marked ul li a {
+  text-decoration: underline; /* Underline links */
+  font-weight: 500; /* Optional: Make links bold */
+  color: #ffd700;
+}
+
+.marked ul li a:hover {
+  color: #0c0f0a; 
+  text-decoration: none; /* Remove underline on hover (optional) */
+}
+html {
+  scroll-behavior: smooth;
+}
+#root, html,body{
+  width: 100%;
+  height: 100%;
+ 
+ }
