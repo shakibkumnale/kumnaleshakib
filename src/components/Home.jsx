@@ -42,12 +42,12 @@ const toggleChat = () => {
    
 
     <div className='w-full font-g relative flex flex-col   bg-[#f2eee7]'>
-    <nav className='w-full  py-2 flex justify-between items-center px-10'>
-      <div className=' flex flex-col justify-center items-center'>
-        <img src="/images/s.png"  className=' max-sm:w-14 py-1' width={52} alt="stk" />
-        <span className='text-xl '>shakib kumnale</span>
+    <nav className='w-full py-2 flex justify-between items-center px-4 md:px-6 lg:px-10'>
+      <div className='flex flex-col justify-center items-center'>
+        <img src="/images/s.png" className='w-12 sm:w-14 lg:w-[52px] py-1' alt="stk" />
+        <span className='text-base sm:text-lg lg:text-xl'>shakib kumnale</span>
       </div>
-      <div className=' text-2xl max-sm:hidden font-t flex justify-between uppercase w-2/5 list-none'>
+      <div className='hidden md:flex text-xl lg:text-2xl font-t justify-between uppercase w-1/2 lg:w-2/5 list-none'>
         
         <a href="#home" className="relative  text-2=3xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left">
 Home
@@ -65,8 +65,8 @@ Videos
       </div>
       
       {open && ( 
-  <div className='sm:hidden z-[1005] absolute top-0 left-0 w-full h-full flex justify-center bg-[#ffffff53]'>
-    <div className={`top-32 w-[80%] py-8 rounded-2xl fixed pt-14 shadow-2xl bg-[#ffde08] text-2xl sm:hidden flex flex-col justify-center items-center gap-7 list-none`}>
+  <div className='md:hidden z-[1005] fixed top-0 left-0 w-full h-full flex justify-center bg-black bg-opacity-50 backdrop-blur-sm'>
+    <div className='top-20 w-[90%] sm:w-[80%] py-8 rounded-2xl fixed pt-14 shadow-2xl bg-[#ffde08] text-2xl flex flex-col justify-center items-center gap-6 list-none'>
       <button onClick={() => setOpen(false)} className='sm:hidden z-50 top-3 right-5 absolute'>
         <HiOutlineXMark size={40}/>
       </button>
@@ -100,7 +100,7 @@ Videos
       <div className=' w-full  flex flex-col pt-20 max-sm:pt-7 pb-10  '>
         <div className=' text-4xl font-t mx-32 max-sm:ml-8 max-sm:text-3xl '> Hey'</div>
        
-        <div className=' text-7xl font-t ml-32 max-sm:ml-8 max-sm:text-5xl min-h-60  '>I AM SHAKIB A <p>
+        <div className=' text-7xl font-t ml-8 md:ml-16 lg:ml-32 mb-4 max-sm:text-5xl min-h-40  '>I AM SHAKIB A <p>
         <ReactTyped className='  text-[#ffde08] uppercase'
                             strings={[
 
@@ -114,9 +114,10 @@ Videos
                             backSpeed={20}
                             loop
                         /></p>  </div>
-        <div className='ml-32 max-sm:ml-8  '>
-          <p className='font-pop  pr-11'>Hi, I'm Shakib Kumnale, a passionate IT professional with a strong background in web development, especially in the MERN stack. I'm always eager to learn, tackle challenging projects, and create user-friendly, impactful applications. I thrive on solving problems and love contributing innovative solutions to the tech space!</p>
-        <button onClick={toggleChat} className='border  mt-5 bg-[#ffde08]  p-2  text-xl text-[#fff] rounded-2xl   sm:text-2xl text-center items-center '><p className="border border-[#000] bg-[#ffde08] px-4 py-1 vtext-xl text-[#000] font-pop rounded-xl sm:p-  sm:text-2xl text-center items-center  " >MY assistant</p></button>
+        <div className='ml-8 md:ml-16 lg:ml-32 max-w-2xl'>
+          <p className='font-pop text-sm sm:text-base lg:text-lg pr-4 sm:pr-8 lg:pr-11'>Hi, I'm Shakib Kumnale, a passionate IT professional with a strong background in web development, especially in the MERN stack. I'm always eager to learn, tackle challenging projects, and create user-friendly, impactful applications. I thrive on solving problems and love contributing innovative solutions to the tech space!</p>
+          <button onClick={toggleChat} className='border  mt-5 bg-[#ffde08]  p-2  text-xl text-[#fff] rounded-2xl   sm:text-2xl text-center items-center '><p className="border border-[#000] bg-[#ffde08] px-4 py-1 vtext-xl text-[#000] font-pop rounded-xl sm:p-  sm:text-2xl text-center items-center  " >MY assistant</p></button>
+
 
         </div>
       </div>
@@ -132,11 +133,15 @@ Videos
  
  
         </div>
-        <div className='h-full flex justify-center '>
-        <img src="/images/myimage.png"  className='z-30 right-40  max-sm:right-40 absolte  max-sm:w-60 w-[300px] '  alt="" />
-         <svg
-  className="w-[500px] h-[500px ] max-sm:w-[400px] absolute py-20" /* Ensures the SVG fills the container */
-  viewBox="38  70 126 112" /* Adjust this to fit your content exactly */
+        <div className='h-full flex justify-center mb-4 relative'>
+        <img 
+          src="/images/myimage.png"  
+          className='z-30 w-52 sm:w-64 lg:w-[300px] relative'
+          alt="Shakib Kumnale" 
+        />
+        <svg
+          className="absolute w-[172%] sm:w-[120%] lg:w-[500px] h-auto aspect-square"
+          viewBox="38 70 126 112"
   xmlns="http://www.w3.org/2000/svg"
   preserveAspectRatio="xMidYMid meet" /* Scales content to fill space without cutting off */
 >
@@ -168,7 +173,7 @@ Videos
     >
    Videos
     </h2></div>
-<div className='w-full py-10 px-20 max-sm:px-10 bg-[#0c0f0a] '>
+<div className='w-full py-10 px-20 max-sm:px-2 bg-[#0c0f0a] '>
 
    <VideoSlider/></div>
    <div id="contact">

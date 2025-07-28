@@ -91,7 +91,7 @@ const Project = () => {
   ];
 
   return (
-    <section className="max-w-full px-14 mx-auto bg-[#0c0f0a] relative pb-8 sm:pb-16">
+    <section className="max-w-full px-6 sm:px-14 mx-auto bg-[#0c0f0a] relative pb-8 sm:pb-16">
       <h2 className="text-3xl sm:text-[40px] bg-[#ffde08] relative z-10 font-bold px-4 py-2 w-max mx-auto text-center text-[#000] sm:border-b-2 border-[#ffde08]">
         Latest Works
       </h2>

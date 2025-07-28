@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const VideoCard = ({ videoSrc, title, description, index }) => {
   return (
-    <div className="group z-0 relative min-w-80 w-80 h-96 bg-gradient-to-br from-[#ffde08] to-[#f5d000] rounded-2xl overflow-hidden shadow-2xl  transform transition-all duration-300 hover:scale-105 hover:shadow-3xl flex-shrink-0">
+    <div className="group z-0 relative min-w-60 w-64 sm:w-80 h-96 bg-gradient-to-br from-[#ffde08] to-[#f5d000] rounded-2xl overflow-hidden shadow-2xl  transform transition-all duration-300 hover:scale-105 hover:shadow-3xl flex-shrink-0">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-4 right-4 w-20 h-20 bg-black rounded-full"></div>
@@ -111,7 +111,7 @@ const VideoSlider = () => {
   };
 
   return (
-    <div className="bg-[#0c0f0a] py-16 overflow-hidden">
+    <div className="bg-[#0c0f0a] py-16  overflow-hidden">
       <style jsx>{`
         @keyframes scroll {
           0% {
@@ -138,8 +138,8 @@ const VideoSlider = () => {
       
       <div className="relative">
         {/* Gradient Overlays */}
-        <div className="absolute left-0 top-0 w-32 h-full bg-gradient-to-r from-[#0c0f0a] to-transparent z-10"></div>
-        <div className="absolute right-0 top-0 w-32 h-full bg-gradient-to-l from-[#0c0f0a] to-transparent z-10"></div>
+        <div className="absolute left-0 top-0 w-8 sm:w-32 h-full bg-gradient-to-r from-[#0c0f0a] to-transparent z-10"></div>
+        <div className="absolute right-0 top-0 w-8 sm:w-32 h-full bg-gradient-to-l from-[#0c0f0a] to-transparent z-10"></div>
         
         {/* Infinite Slider */}
         <div className="flex gap-6 w-max scroll-container">
