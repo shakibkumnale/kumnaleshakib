@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import ProjectCard from './ProjectCard';
+import OptimizedImage from './OptimizedImage';
 
 const Project = () => {
   const [currentImage, setCurrentImage] = useState('/images/shaka1.png');
