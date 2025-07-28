@@ -22,7 +22,7 @@ const Project = () => {
       description: 'AVAZ is an AI-powered voice assistant designed for Gen-Z, offering real-time chat, image generation, audio creation, and voice interaction capabilities. It also enables users to ask questions about uploaded videos and receive instant responses.',
       technologies: ['React.js', 'express.js', 'node.js', 'Gemini AI', 'javascript', 'mongoDB Atlas', 'mongoose', 'Tailwindcss', 'POSTMAN', 'JWT token', 'Nodemailer (send OTP)', 'Huggingface'],
       imageUrl: '/images/avaz.png',
-      projectUrl: 'https://github.com/shakibkumnale/AVAZ',
+      projectUrl: 'https://github.com/shakibkumnale/AVAZ-server',
       color: '#fff',
       icon: 'github'
     },
@@ -32,7 +32,7 @@ const Project = () => {
       description:"Soul Distribution was born from this realization—not just as a service, but as a platform where artists can focus purely on their music, while we handle everything else. We're artists serving artists.",
       technologies: ['Next.Js,React.js', 'Spotify API', 'javascript', 'Vercel', 'mongoose', 'Tailwindcss', 'POSTMAN'],
       imageUrl: '/images/soul1.png',
-      projectUrl: '#home',
+      projectUrl: 'http://souldistribution.vercel.app/',
       color: '#FF13F0',
       icon: 'web'
     },
